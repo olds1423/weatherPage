@@ -4,12 +4,25 @@ html {
   background-color: blue;
 }
 
+body {
+background-color: white;
+}
+
 header {
 
 }
 
-.top {
+ul {
+  list-style: none;
+}
 
+#wrapper {
+}
+
+.top {
+display: flex;
+flex-direction: row;
+width: 90%;
 }
 
 .navBar {
