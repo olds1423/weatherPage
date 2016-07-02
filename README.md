@@ -14,9 +14,25 @@ Will will approve all merges from Michael
 
 **To-do Task**
 
-Frame out HTML
-  - Basic HTML standards across and links to correct resources
-  - Sections for the containers reflecting the Preview Sections
-  -
+//HTML
 
-//Javascript
+Frame out HTML - Three Main Sections
+- Basic HTML standards across and links to correct resources
+- Sections for the containers reflecting the Preview Sections
+-
+  Header **Header** - Michael
+  Navigation **navBar** - Michael
+  Start of Main - Michael
+    - search area **searchSection**
+    -
+
+  Current Weather Section **currentWeather** - Chris
+
+  Extended Forecast **futureWeather** - Chris
+
+
+
+
+//Javascript - Will Start
+
+//CSS
