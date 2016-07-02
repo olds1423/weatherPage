@@ -6,6 +6,7 @@ html {
 
 body {
 background-color: white;
+justify-content: center;
 }
 
 header {
@@ -19,14 +20,21 @@ ul {
 #wrapper {
 }
 
-.top {
+#top {
 display: flex;
 flex-direction: row;
-width: 90%;
+justify-content: space-between;
+margin-left: 10px;
+/*width: 90%;*/
 }
 
-.navBar {
 
+#navBar {
+display: flex;
+}
+
+#doc {
+margin-right: 10px;
 }
 
 #searchSection {
