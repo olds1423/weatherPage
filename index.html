@@ -1,60 +1,73 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <title>National Weather Service</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>National Weather Service</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  <body>
-    <section class="wrapper">
-      <header>
-        <section id="top">
-          <img src="images/header_noaa.png" alt="NOAA Logo" />
-          <img src="images/header_nws.png" alt="National Weather Service Logo" />
-          <img src="images/header_doc.png" alt="National Weather Service Header Style Icon" />
-          <h1>NATIONAL WEATHER SERVICE</h1>
-          <p>NATIONAL OCEANIC AND ATMOSPHERIC ADMINISTRATION</p>
+<body>
+  <section class="wrapper">
+    <header>
+      <section id="top">
+        <img src="images/header_noaa.png" alt="NOAA Logo" />
+        <img src="images/header_nws.png" alt="National Weather Service Logo" />
+        <img id="doc" src="images/header_doc.png" alt="National Weather Service Header Style Icon" />
+      </section>
+      <nav id="navBar">
+        <ul>
+          <li>HOME</li>
+          <li>FORECAST</li>
+          <li>PAST WEATHER</li>
+          <li>SAFETY</li>
+          <li>INFORMATION</li>
+          <li>EDUCATION</li>
+          <li>NEWS</li>
+          <li>SEARCH</li>
+          <li>ABOUT</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="searchSection">
+        <form class="search" action="index.html" method="post">
+          <input type="text" name="search" value="">
+          <input type="button" name="go-button" value="Go">
+        </form>
+        <a href="#">View Location Examples</a>
+        <p>Your local forecast office is</p>
+        <a href="#">Seattle, WA</a>
+        <a href="#">En Espa&ntilde;ol</a>
+        <section class="shareBar">
+          <img src="" alt="Share Page Icon" />
+          <a id="shareBarSpace" href="#">Share |</a>
+          <img src="#" alt="facebook-icon" />
+          <img src="#" alt="twitter-icon" />
+          <img src="#" alt="email-icon" />
+          <img src="#" alt="print-icon" />
+          <img src="#" alt="gmail-icon" />
         </section>
-        <nav id="navBar">
-          <ul>
-            <li>HOME</li>
-            <li>FORECAST</li>
-            <li>PAST WEATHER</li>
-            <li>SAFETY</li>
-            <li>INFORMATION</li>
-            <li>EDUCATION</li>
-            <li>NEWS</li>
-            <li>SEARCH</li>
-            <li>ABOUT</li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <section id="searchSection">
-          <form class="search" action="index.html" method="post">
-            <input type="text" name="search" value="">
-            <input type="button" name="go-button" value="Go">
-          </form>
-          <a href="#">View Location Examples</a>
-          <p>Your local forecast office is</p>
-          <a href="#">Seattle, WA</a>
-          <a href="#">En Espa&ntilde;ol</a>
-          <section class="shareBar">
-            <img src="" alt="Share Page Icon" />
-            <a id="shareBarSpace" href="#">Share |</a>
-            <img src="#" alt="facebook-icon" />
-            <img src="#" alt="twitter-icon" />
-            <img src="#" alt="email-icon" />
-            <img src="#" alt="print-icon" />
-            <img src="#" alt="gmail-icon" />
-          </section>
+        <h2>Rain, thunderstorms developing from southern Plains to mid-Atlantic</h2>
+        <p> A slow-moving storm system will be the focus for rain and thunderstorms from the southern Plains across to the Southeast and Mid-Atlantic States early this week. Locally heavy rainfall could lead to isolated flash flooding, especially in the mid-Mississippi
+          River Valley on Tuesday. Isolated severe thunderstorms will be possible Tuesday near the Gulf Coast associated with this same storm system.</p>
+        <a href="#">Read more...</a>
+      </section>
+      <section id="extendedForecast">
+        <section id="extendedForecastTop">
+          <p>Current conditions at</p>
+          <p>Seattle, Seattle Boeing Field (KBFI)</p>
+          <p><b>Lat:</b>47.57&deg;N <b>Lon:</b>-122.41&deg;W <b>Elev:</b>16ft.</p>
+        </section>
+        <section id="extendedForecastBottom">
+          <img src="images/nsct.png" alt="" />
 
         </section>
-      </main>
-      <script src="conversion.js" type="javascript/text"></script>
-      </section
+      </section>
+    </main>
+    <script src="conversion.js" type="javascript/text"></script>
+  </section>
 
-  </body>
+</body>
+
 </html>
