@@ -1,6 +1,5 @@
 
 
-
 function conversion(temp, fromUnit, toUnit) {
 	var newTemp = 0;
 	if (fromUnit.toLowerCase() === 'fahrenheit') {
@@ -10,7 +9,7 @@ function conversion(temp, fromUnit, toUnit) {
 		}
 	}
 	else {
-		newTemp = (temp * 5/9 ) + 32;
+		newTemp = (temp * (9/5) ) + 32;
 		return newTemp;
 	}
 }
@@ -35,4 +34,4 @@ function test() {
 
 }
 
-test();
+// test();
