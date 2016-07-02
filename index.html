@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>National Weather Service</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header>
-      <img src="" alt="" />
+
+<head>
+  <meta charset="utf-8">
+  <title>National Weather Service</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <section id="top">
+      <img src="img/header_noaa.png" alt="NOAA Logo" />
+      <img src="header_nws.png" alt="National Weather Service Logo" />
+      <img src="header_doc.png" alt="National Weather Service Header Style Icon" />
       <h1>NATIONAL WEATHER SERVICE</h1>
       <p>NATIONAL OCEANIC AND ATMOSPHERIC ADMINISTRATION</p>
-      <nav>
-        <ul>
-          <li>HOME</li>
-          <li>FORECAST</li>
-          <li>PAST WEATHER</li>
-          <li>SAFETY</li>
-          <li>INFORMATION</li>
-          <li>EDUCATION</li>
-          <li>NEWS</li>
-          <li>SEARCH</li>
-          <li>ABOUT</li>
-        </ul>
-      </nav>
-    </header>
-    script <script src="conversion.js" type="javascript/text"></script>
-  </body>
+    </section>
+    <nav id="navBar">
+      <ul>
+        <li>HOME</li>
+        <li>FORECAST</li>
+        <li>PAST WEATHER</li>
+        <li>SAFETY</li>
+        <li>INFORMATION</li>
+        <li>EDUCATION</li>
+        <li>NEWS</li>
+        <li>SEARCH</li>
+        <li>ABOUT</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="searchSection">
+    <form class="search" action="index.html" method="post">
+      <input type="text" name="search" value="">
+      <input type="button" name="go-button" value="Go">
+    </form>
+    </section>
+  </main>
+  <script src="conversion.js" type="javascript/text"></script>
+</body>
+
 </html>
