@@ -26,6 +26,8 @@ Frame out HTML - Three Main Sections
     - search area **searchSection**
     -
 
+  Form class for search form is 'search'
+
   Current Weather Section **currentWeather** - Chris
 
   Extended Forecast **futureWeather** - Chris
