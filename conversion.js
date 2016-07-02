@@ -1,5 +1,4 @@
-
-
+/*====================== Functions ======================*/
 function conversion(temp, fromUnit, toUnit) {
 	var newTemp = 0;
 	if (fromUnit.toLowerCase() === 'fahrenheit') {
@@ -13,6 +12,24 @@ function conversion(temp, fromUnit, toUnit) {
 		return newTemp;
 	}
 }
+
+function eventListening(){
+	var fahrenheit = document.getElementById('fahrenheit');
+	fahrenheit.addEventListener('click', eventHandler('F'));
+
+	var celsius = document.getElementById('celsius');
+	celsius.addEventListener('click', eventHandler('C'))
+}
+
+function eventHandler(units){
+	if (units === 'F') {
+		conversion(10, 'celsius', 'fahrenheit');
+	}
+	else {
+		conversion(10, 'fahrenheit', 'celsius');
+	}
+}
+
 
 function test() {
 	for (var i = 0; i < 5; i++) {
