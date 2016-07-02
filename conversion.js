@@ -1,3 +1,6 @@
+
+
+
 function conversion(temp, fromUnit, toUnit) {
 	var newTemp = 0;
 	if (fromUnit.toLowerCase() === 'fahrenheit') {
@@ -12,6 +15,24 @@ function conversion(temp, fromUnit, toUnit) {
 	}
 }
 
-for (var i = 0; i < 21; i++) {
-	console.log(conversion(Math.floor(Math.random()), 'fahrenheit', 'celsius'));
+function test() {
+	for (var i = 0; i < 5; i++) {
+		var rand = Math.random() * 100;
+		console.log(Math.floor(rand) + ' degrees fahrenheit is:');
+		console.log(conversion(Math.floor(rand), 'fahrenheit', 'celsius') + ' degrees celcius');
+		console.log('_______________________');
+	}
+
+	console.log('++++++++++++++++++++++++++++++++++++++++++++++++++++++++');
+
+	for (var i = 0; i < 5; i++) {
+		var rand = Math.random() * 100;
+		console.log(Math.floor(rand) + ' degrees celsius is:');
+		console.log(conversion(Math.floor(rand), 'celsius', 'fahrenheit') + ' degrees fahrenheit');
+		console.log('_______________________');
+	}
+
+
 }
+
+test();
