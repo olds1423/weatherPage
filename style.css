@@ -23,7 +23,20 @@ li {
   display: flex;
   justify-content: space-around;
   padding-left: 15px;
+}
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+p {
+  margin: 0;
+}
+.shareBar {
+  display: flex;
+  flex-direction: row;
+  height: 15px
 }
 
 #wrapper {
@@ -55,4 +68,27 @@ margin-left: 10px;
   display: flex;
   flex-direction: row;
   /*background-color: blue;*/
+}
+
+#leftSide {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  min-width: 255px;
+  border: 3px solid black;
+}
+
+#search {
+  min-height: 40px;
+}
+
+#yourArea {
+  margin-top: 8px;
+}
+
+#oneLine {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
