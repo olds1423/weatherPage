@@ -5,8 +5,25 @@
 		<title>Data</title>
 	</head>
 	<body>
-		<button type="button" name="button">Fahrenheit</button>
-		<button type="button" name="button">Celsius</button>
-		<script src="conversion.js" type="javascript/text"></script>
+		<!-- <button type="button" name="button">Fahrenheit</button> -->
+		<!-- <button type="button" name="button">Celsius</button> -->
+
+		<main>
+			<section id="conversionSection">
+				<form id='conversionForm' action="conversion.html" method="post">
+
+
+					<label for="temp">Value to Convert</label>
+					<input type="float" name="degrees" size="15">
+
+					<input type="submit" value="Fahrenheit" id="fahrenheit">
+					<input type="submit" value="Celsius" id="celsius">
+
+
+				</form>
+			</section>
+		</main>
+
+		<script src="conversion.js"></script>
 	</body>
 </html>

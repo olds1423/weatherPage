@@ -1,35 +1,65 @@
 /*====================== Functions ======================*/
 function conversion(temp, fromUnit, toUnit) {
 	var newTemp = 0;
-	if (fromUnit.toLowerCase() === 'fahrenheit') {
-		if (toUnit.toLowerCase() === 'celsius') {
+	if (fromUnit.toLowerCase() === 'celsius') {
+		if (toUnit.toLowerCase() === 'fahrenheit') {
 			newTemp = (temp - 32) * (5/9);
 			return newTemp;
 		}
 	}
 	else {
 		newTemp = (temp * (9/5) ) + 32;
+		console.log(newTemp);
 		return newTemp;
 	}
 }
 
 function eventListening(){
 	var fahrenheit = document.getElementById('fahrenheit');
-	fahrenheit.addEventListener('click', eventHandler('F'));
+	fahrenheit.addEventListener('click', fahrenheitEventHandler);
 
 	var celsius = document.getElementById('celsius');
-	celsius.addEventListener('click', eventHandler('C'))
+	celsius.addEventListener('click', celciusEventHandler)
 }
 
-function eventHandler(units){
-	if (units === 'F') {
-		conversion(10, 'celsius', 'fahrenheit');
-	}
-	else {
-		conversion(10, 'fahrenheit', 'celsius');
-	}
+function fahrenheitEventHandler(event){
+	event.preventDefault();
+	var form = document.getElementById('conversionForm');
+	var temp = form.degrees.value;
+	var newTemp = conversion(temp, 'celsius', 'fahrenheit');
+	var strContents = [temp, 'fahrenheit', newTemp, 'celcius'];
+	var parent = document.getElementById('conversionForm');
+	var child = document.createElement('p');
+	console.log(strContents);
+	child.textContent = strContents[0] + ' degrees ' + strContents[1] + ' is ' + strContents[2] + ' degrees ' + strContents[3] + '.';
+	parent.appendChild(child);
+	return strContents;
 }
 
+function celciusEventHandler(event){
+	event.preventDefault();
+	var form = document.getElementById('conversionForm');
+	var temp = form.degrees.value;
+	var newTemp = conversion(temp, 'fahrenheit', 'celcius');
+	var strContents = [temp, 'celcius', newTemp, 'fahrenheit'];
+	var parent = document.getElementById('conversionForm');
+	var child = document.createElement('p');
+	console.log(strContents);
+	child.textContent = strContents[0] + ' degrees ' + strContents[1] + ' is ' + strContents[2] + ' degrees ' + strContents[3] + '.';
+	parent.appendChild(child);
+	return strContents;
+}
+
+function displayResults(results) {
+	var parent = document.getElementById('conversionForm');
+	var child = document.createElement('p');
+	console.log(results);
+	child.textContent = results[0] + 'Degrees ' + results[1] + ' is ' + results[2] + ' degrees ' + results[3] + '.';
+}
+
+function main() {
+	eventListening()
+}
 
 function test() {
 	for (var i = 0; i < 5; i++) {
@@ -52,3 +82,5 @@ function test() {
 }
 
 // test();
+
+main();
