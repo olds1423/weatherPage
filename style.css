@@ -142,3 +142,15 @@ margin-left: 10px;
   flex-direction: row;
   justify-content: space-between;
 }
+
+
+/*Start Mike CSS*/
+.columnsPlease {
+  flex-direction: column;
+  display: inline;
+}
+
+#imageForecast {
+  display: flex;
+  justify-content: space-between;
+}
