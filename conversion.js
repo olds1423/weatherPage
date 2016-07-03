@@ -20,6 +20,9 @@ function eventListening(){
 
 	var celsius = document.getElementById('celsius');
 	celsius.addEventListener('click', celciusEventHandler)
+
+	var clear = document.getElementById('clear');
+	clear.addEventListener('click', clearResults)
 }
 
 function fahrenheitEventHandler(event){
@@ -28,9 +31,8 @@ function fahrenheitEventHandler(event){
 	var temp = form.degrees.value;
 	var newTemp = conversion(temp, 'celsius', 'fahrenheit');
 	var strContents = [temp, 'fahrenheit', newTemp, 'celcius'];
-	var parent = document.getElementById('conversionForm');
+	var parent = document.getElementById('results');
 	var child = document.createElement('p');
-	console.log(strContents);
 	child.textContent = strContents[0] + ' degrees ' + strContents[1] + ' is ' + strContents[2] + ' degrees ' + strContents[3] + '.';
 	parent.appendChild(child);
 	return strContents;
@@ -38,7 +40,7 @@ function fahrenheitEventHandler(event){
 
 function celciusEventHandler(event){
 	event.preventDefault();
-	var form = document.getElementById('conversionForm');
+	var form = document.getElementById('results');
 	var temp = form.degrees.value;
 	var newTemp = conversion(temp, 'fahrenheit', 'celcius');
 	var strContents = [temp, 'celcius', newTemp, 'fahrenheit'];
@@ -50,12 +52,22 @@ function celciusEventHandler(event){
 	return strContents;
 }
 
-function displayResults(results) {
-	var parent = document.getElementById('conversionForm');
-	var child = document.createElement('p');
-	console.log(results);
-	child.textContent = results[0] + 'Degrees ' + results[1] + ' is ' + results[2] + ' degrees ' + results[3] + '.';
+function clearResults(event) {
+	event.preventDefault();
+	var parent = document.getElementById("results");
+	while (parent.firstChild) {
+    parent.removeChild(parent.firstChild);
 }
+}
+
+function displayResults(results) {
+	var parent = document.getElementById('results');
+	var child = document.createElement('p');
+	console.log(1);
+	child.textContent = results[0] + ' degrees ' + results[1] + ' is ' + results[2] + ' degrees ' + results[3] + '.';
+}
+
+
 
 function main() {
 	eventListening()
