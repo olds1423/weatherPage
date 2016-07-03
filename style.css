@@ -76,7 +76,6 @@ margin-left: 10px;
   flex-direction: column;
   width: 35%;
   min-width: 255px;
-  border: 3px solid black;
   margin-right: 25px;
 }
 
@@ -84,6 +83,50 @@ margin-left: 10px;
   display: flex;
   flex-direction: column;
   margin-left: 25px;
+}
+
+#extendedForecastTop {
+  background-color: #bfbfbf;
+  border-top: 2px solid grey;
+  border-left: 2px solid grey;
+  border-right:2px solid grey;
+  padding: 10px;
+}
+
+#currentLocation {
+  color: #000066;
+  font-size: 20px;
+}
+
+#currentForecast {
+
+  border: 2px solid grey;
+}
+
+#leftSidePt2 {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid black;
+}
+
+#leftSidePt2Text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  width: 20%;
+}
+
+#largeTemp {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#mediumTemp {
+  font-size: 30px;
+}
+#currentForecastImg {
+  width: 100px;
+  /*heigh: 100px;*/
 }
 #search {
   min-height: 40px;
