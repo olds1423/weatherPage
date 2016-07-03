@@ -40,11 +40,12 @@ function fahrenheitEventHandler(event){
 
 function celciusEventHandler(event){
 	event.preventDefault();
-	var form = document.getElementById('results');
+	var form = document.getElementById('conversionForm');
+	console.log(form);
 	var temp = form.degrees.value;
 	var newTemp = conversion(temp, 'fahrenheit', 'celcius');
 	var strContents = [temp, 'celcius', newTemp, 'fahrenheit'];
-	var parent = document.getElementById('conversionForm');
+	var parent = document.getElementById('results');
 	var child = document.createElement('p');
 	console.log(strContents);
 	child.textContent = strContents[0] + ' degrees ' + strContents[1] + ' is ' + strContents[2] + ' degrees ' + strContents[3] + '.';

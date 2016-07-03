@@ -1,0 +1,82 @@
+body{
+	background-image: url(images/rain2.png);
+
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;;
+
+
+}
+
+section{
+
+}
+
+form{
+
+}
+
+label{
+
+}
+
+input{
+
+}
+
+#conversionSection{
+	background-color: rgba(0, 150, 255, .6);
+	border: 2px solid white;
+	margin-top: 20px;
+	border-radius: 10px;
+	width: 300px;
+	height: 80px;
+	padding: 30px;
+}
+
+#conversionForm{
+
+}
+
+#buttons{
+	margin: 10px;
+}
+
+#fahrenheit{
+
+}
+
+#celsius{
+
+}
+
+#clear{
+
+}
+
+#results{
+	background-color: rgba(255, 255, 255, .6);
+	border: 2px solid rgba(0, 150, 255, 1);
+	margin-top: 20px;
+	border-radius: 10px;
+	width: 500px;
+	height: 800px;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#temp{
+	background-color: #A1D490;
+}
+
+
+
+
+
+
+/*End*/
