@@ -126,6 +126,17 @@ margin-left: 10px;
   flex-direction: column;
   margin-left: 80px;
 }
+
+#topExtendo {
+  background-color: #bfbfbf;
+  border-left: 2px solid grey;
+  border-right:2px solid grey;
+  padding: 10px;
+}
+
+#imageForecast {
+  border: 2px solid grey;
+}
 #largeTemp {
   font-size: 40px;
   font-weight: bold;
